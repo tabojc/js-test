@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+</head>
+<body>
+    Content of the document......
+</body>
+    <script src='test.js'></script>
+    <script>
+        const links = [
+            {id: 1, key: '%2FA%', title: 'here', link: '/2fa' },
+            {id: 2, key: '%DOC%', title: 'there', link: '/doc' },
+        ];
+        const message = 'two facttor auth %DOC% and uploading files %2FA%';
+        const link = getLinkByKey(links, '%2FAA%');
+        console.log(link.length);
+    </script>
+</html>
